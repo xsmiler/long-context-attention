@@ -28,7 +28,7 @@ class LongContextAttention(torch.nn.Module):
         gather_idx: int = 1,
         ring_impl_type: str = "basic",
         use_pack_qkv: bool = False,
-        use_sync: bool = False,
+        use_sync: bool = True,
         attn_type: AttnType = AttnType.FA,
         attn_processor: torch.nn.Module = None,
     ) -> None:
